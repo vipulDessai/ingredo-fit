@@ -1,13 +1,30 @@
-# Project dependencies
-.cache
-node_modules
-yarn-error.log
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Build directory
-/public
+# dependencies
+node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+build*
+dist
+
+# misc
 .DS_Store
 
-# lock files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# lock
 package-lock.json
-.env.*
-yarn.lock
+
+# misc
+lapp multiple file code test
+.scannerwork
+webpack-report
+bit-pipeline-oidc-roles.md
