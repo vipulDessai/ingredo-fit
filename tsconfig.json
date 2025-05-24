@@ -1,0 +1,26 @@
+{
+  "include": ["src/**/*", "global.d.ts"], // Include all files in `src` folder
+  "exclude": ["node_modules"], // Exclude `node_modules` folder
+  "compilerOptions": {
+    "baseUrl": "./", // Base directory for resolving modules
+    "outDir": "./dist", // Output directory for compiled files
+    "strict": true, // Enable strict type-checking
+    "resolveJsonModule": true, // Allows importing JSON files
+    "allowJs": true, // allow JS or JSX imports in ts files
+    "skipLibCheck": true, // Skips type checking for node modules library files
+    "inlineSourceMap": true, // Enables source maps for easier debugging
+    "inlineSources": true, // Include the original .tsx files in the source maps
+    "declaration": true, // Generate type declaration (*.d.ts) files
+    "allowSyntheticDefaultImports": true,
+    // resolve import names to their actual import paths
+    // by pointing to the coorect @types location
+    "paths": {},
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    // "module" controls what JS output is produced
+    // either pure JS or JS modules (i.e. with import/exports)
+    "module": "ESNext",
+    "target": "es6",
+    "moduleResolution": "node"
+  }
+}

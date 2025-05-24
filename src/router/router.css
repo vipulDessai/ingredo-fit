@@ -1,0 +1,11 @@
+.routing-error-page {
+  padding: 50px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  h1 {
+    padding-bottom: 1rem;
+  }
+}
